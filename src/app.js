@@ -13,9 +13,9 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      words: "Default",
-      url: "URL",
-      method: ""
+      words: 'Default',
+      url: 'URL',
+      method: '',
     };
   }
 
@@ -23,18 +23,20 @@ class App extends React.Component {
     this.setState({method});
   }
 
+  handleSubmit(url){
+    this.setState({url});
+  }
+
 
   render(){
     
     return (
       <div>
-        <Header
-          words = {this.state.words}
-          handleState={this.handleStateWords} />
+        <Header/>
 
         <Form 
-          urls = {this.state.url}
-          handleMethod={this.handleMthod}
+          url = {this.state.url}
+          handleMethod={this.handleMethod}
           handleSubmit={this.handleSubmit}
           method={this.state.method}
         />
