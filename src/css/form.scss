@@ -2,7 +2,19 @@ $darkBlue: #0d1321;
 $offWhite: #F0EBD8;
 $slate: #63768D;
 
+#form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
 
+#inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+}
 
 form{
   margin-top: 25px;
@@ -10,10 +22,11 @@ form{
   color: $darkBlue;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     label{
-      padding: 10px;
+      padding: 20px;
   }
   input{
     padding: 5px;
+    height: 1em;
     color: $slate;
     background-color: whitesmoke;
     text-decoration: none;
@@ -24,32 +37,45 @@ form{
     border: none;
     text-decoration: none;
     margin: 10px;
-    padding: 7.5px;
-    border-radius: 10px;
-    background-color: $slate;
-    color: $offWhite;
+    margin-left: 25px;
+    padding: 15px;
+    border-radius: 100%;
+background: #F0EBD8;
+box-shadow:  20px 20px 60px #ccc8b8, 
+             -20px -20px 60px #fffff8;
+
+    color: $slate;
   }
   button:hover{
     color: rgba(199, 46, 46, 0.781);
-    box-shadow: $darkBlue 0px 3px 15px;
+    border-radius: 100%;
+    background: linear-gradient(315deg, #fffbe7, #d8d4c2);
+    box-shadow:  -5px -5px 60px #ccc8b8, 
+                 5px 5px 60px #fffff8;
   }
   ul{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin-left:-40px;
+
     li {
       display: inline-block;
-      padding: 5px;
+      padding: 25px;
       margin: 10px;
-      color: $offWhite;
-      background: radial-gradient(circle, rgba(13,19,33,1) 0%, rgba(99,118,141,1) 100%);
-      border-radius: 10px;
+      border-radius: 100%;
+      background: #F0EBD8;
+      box-shadow:  20px 20px 60px #ccc8b8, 
+                   -20px -20px 60px #fffff8;
+      
+    color: $slate;
       cursor: pointer;
     }
     li:hover{
         color: rgba(199, 46, 46, 0.781);
-        box-shadow: $darkBlue 0px 3px 15px;
+        background: linear-gradient(315deg, #fffbe7, #d8d4c2);
+        box-shadow:  -5px -5px 60px #ccc8b8, 
+                 5px 5px 60px #fffff8;
+        overflow: hidden;
     }
   }
   

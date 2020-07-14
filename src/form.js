@@ -15,20 +15,24 @@ class Form extends React.Component {
 
 
   handleChange(event) {
+    event.preventDefault();
     this.setState({url: event.target.value});
   }
 
   handleSubmit(event) {
     event.preventDefault();
+    this.setState({url: event.target.value});
   }
 
   render() {
     return (
       <div id='form'>
-        <form onSubmit={this.handleSubmit}>
+        <form id='url-form' >
+          <section id='inputs'>
           <label>URL:</label>
-          <input type="text" id="url" name="url"onChange={this.handleChange}></input>
-          <button className="action" type="submit" >GO</button>
+          <input type="text" id="url" name="url" onChange={this.handleChange}></input>
+          <button className="action" type="submit" onSubmit={this.handleSubmit} >GO</button>
+          </section>
           <ul>
             <li onClick={() => this.setState({method: 'GET'})}> GET</li>
             <li onClick={() => this.setState({method: 'POST'})}> POST</li>
