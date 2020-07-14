@@ -3,9 +3,9 @@ import React from 'react';
 import './css/form.scss';
 
 class Form extends React.Component{
-  constructor(){
-    super();
-    this.state = {};
+  constructor(props){
+    super(props);
+
   }
 
   render(){
@@ -14,7 +14,7 @@ class Form extends React.Component{
         <form id="input-form" >
           <label htmlFor="url-input">URL</label>
           <input id="url-input" type="text">Enter a URL please</input>
-          <button type="submit" name="go">GO</button>
+          <button type="submit" name="go" onSubmit={() => this.props.handleSubmit(this.props.value) }>GO</button>
           <ul id="options">
             <li onClick={() => this.props.handleMethod('GET')}>GET</li>
             <li onClick={() => this.props.handleMethod('POST')}>POST</li>
@@ -26,7 +26,7 @@ class Form extends React.Component{
     )(
       <div id="display">
         <h2>
-          action with the URL
+          {this.props.method}
         </h2>
       </div>,
     );

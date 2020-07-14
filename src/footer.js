@@ -5,7 +5,6 @@ import './css/footer.scss';
 class Footer extends React.Component{
   constructor(){
     super();
-    this.state = {};
   }
 
   render(){
