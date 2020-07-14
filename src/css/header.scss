@@ -1,0 +1,14 @@
+$darkBlue: #0d1321;
+$offWhite: #F0EBD8;
+$slate: #63768D;
+
+header {
+  background: linear-gradient(-180deg, rgba(13,19,33,1) 0%, rgba(99,118,141,1) 30%, rgba(240,235,216,0) 100%);
+ width:100vw;
+ display: flex;
+ align-content: center;
+ justify-content: center;
+  h1{
+    color: $darkBlue;
+  }
+}
