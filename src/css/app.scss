@@ -1,0 +1,11 @@
+$darkBlue: #0d1321;
+$offWhite: #F0EBD8;
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $offWhite;
+  color: black;
+}
