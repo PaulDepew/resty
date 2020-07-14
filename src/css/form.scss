@@ -1,0 +1,70 @@
+$darkBlue: #0d1321;
+$offWhite: #F0EBD8;
+$slate: #63768D;
+
+
+
+form{
+  margin-top: 25px;
+  padding: 10px;
+  color: $darkBlue;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    label{
+      padding: 10px;
+  }
+  input{
+    padding: 5px;
+    color: $slate;
+    background-color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+  }
+  button{
+    border: none;
+    text-decoration: none;
+    margin: 10px;
+    padding: 7.5px;
+    border-radius: 10px;
+    background-color: $slate;
+    color: $offWhite;
+  }
+  button:hover{
+    color: rgba(199, 46, 46, 0.781);
+    box-shadow: $darkBlue 0px 3px 15px;
+  }
+  ul{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left:-40px;
+    li {
+      display: inline-block;
+      padding: 5px;
+      margin: 10px;
+      color: $offWhite;
+      background: radial-gradient(circle, rgba(13,19,33,1) 0%, rgba(99,118,141,1) 100%);
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    li:hover{
+        color: rgba(199, 46, 46, 0.781);
+        box-shadow: $darkBlue 0px 3px 15px;
+    }
+  }
+  
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  p { 
+color: $darkBlue;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  }
+}
+

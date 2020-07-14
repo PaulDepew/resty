@@ -2,33 +2,44 @@ import React from 'react';
 
 import './css/form.scss';
 
-class Form extends React.Component{
-  constructor(props){
+class Form extends React.Component {
+  constructor(props) {
     super(props);
-
+    this.state = {
+      method: '',
+      url: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  render(){
+
+  handleChange(event) {
+    this.setState({url: event.target.value});
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+  }
+
+  render() {
     return (
-      <div>
-        <form id="input-form" >
-          <label htmlFor="url-input">URL</label>
-          <input id="url-input" type="text">Enter a URL please</input>
-          <button type="submit" name="go" onSubmit={() => this.props.handleSubmit(this.props.value) }>GO</button>
-          <ul id="options">
-            <li onClick={() => this.props.handleMethod('GET')}>GET</li>
-            <li onClick={() => this.props.handleMethod('POST')}>POST</li>
-            <li onClick={() => this.props.handleMethod('PUT')}>PUT</li>
-            <li onClick={() => this.props.handleMethod('DELETE')}>DELETE</li>
+      <div id='form'>
+        <form onSubmit={this.handleSubmit}>
+          <label>URL:</label>
+          <input type="text" id="url" name="url"onChange={this.handleChange}></input>
+          <button className="action" type="submit" >GO</button>
+          <ul>
+            <li onClick={() => this.setState({method: 'GET'})}> GET</li>
+            <li onClick={() => this.setState({method: 'POST'})}> POST</li>
+            <li onClick={() => this.setState({method: 'PUT'})}> PUT</li>
+            <li onClick={() => this.setState({method: 'DELETE'})}> DELETE</li>
           </ul>
         </form>
+        <section>
+          <p>{this.state.method} {this.state.url}</p>
+        </section>
       </div>
-    )(
-      <div id="display">
-        <h2>
-          {this.props.method}
-        </h2>
-      </div>,
     );
   }
 }

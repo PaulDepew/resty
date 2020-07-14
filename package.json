@@ -9,17 +9,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PaulDepew/resty.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PaulDepew/resty/issues"
-  },
-  "homepage": "https://github.com/PaulDepew/resty#readme",
   "dependencies": {
     "eslint-plugin-react": "^7.20.3",
     "node-sass": "^4.14.1",

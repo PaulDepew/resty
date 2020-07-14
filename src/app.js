@@ -9,24 +9,7 @@ import Form from './form.js';
 // Import SCSS styling
 import './css/app.scss';
 
-class App extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      words: 'Default',
-      url: 'URL',
-      method: '',
-    };
-  }
-
-  handleMethod(method){
-    this.setState({method});
-  }
-
-  handleSubmit(url){
-    this.setState({url});
-  }
-
+class App extends React.Component { 
 
   render(){
     
@@ -34,12 +17,7 @@ class App extends React.Component {
       <div>
         <Header/>
 
-        <Form 
-          url = {this.state.url}
-          handleMethod={this.handleMethod}
-          handleSubmit={this.handleSubmit}
-          method={this.state.method}
-        />
+        <Form />
 
         <Footer />
       </div>
