@@ -9,7 +9,7 @@
 - [submission PR](https://github.com/PaulDepew/resty)
 
 - [Netlify Deployment](https://distracted-roentgen-6951b6.netlify.app/)
-- [GitHub Pages Deployment]()
+- [GitHub Pages Deployment](https://pauldepew.github.io/resty/)
 - [AWS S3 Deployment](http://resty-app-test.s3-website-us-west-2.amazonaws.com/)
 - [AWS Amplify Deployment](https://master.d30w5wk5pui6fs.amplifyapp.com/)
 
