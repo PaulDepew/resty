@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/PaulDepew/resty/static/css/main.367e15d1.chunk.css",
+    "main.js": "/PaulDepew/resty/static/js/main.a173c7df.chunk.js",
+    "main.js.map": "/PaulDepew/resty/static/js/main.a173c7df.chunk.js.map",
+    "runtime-main.js": "/PaulDepew/resty/static/js/runtime-main.e9be2e4e.js",
+    "runtime-main.js.map": "/PaulDepew/resty/static/js/runtime-main.e9be2e4e.js.map",
+    "static/js/2.3cb76820.chunk.js": "/PaulDepew/resty/static/js/2.3cb76820.chunk.js",
+    "static/js/2.3cb76820.chunk.js.map": "/PaulDepew/resty/static/js/2.3cb76820.chunk.js.map",
+    "index.html": "/PaulDepew/resty/index.html",
+    "precache-manifest.99cfd5828f4bdcac1655e9151ce24bb0.js": "/PaulDepew/resty/precache-manifest.99cfd5828f4bdcac1655e9151ce24bb0.js",
+    "service-worker.js": "/PaulDepew/resty/service-worker.js",
+    "static/css/main.367e15d1.chunk.css.map": "/PaulDepew/resty/static/css/main.367e15d1.chunk.css.map",
+    "static/js/2.3cb76820.chunk.js.LICENSE.txt": "/PaulDepew/resty/static/js/2.3cb76820.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9be2e4e.js",
+    "static/js/2.3cb76820.chunk.js",
+    "static/css/main.367e15d1.chunk.css",
+    "static/js/main.a173c7df.chunk.js"
+  ]
+}
