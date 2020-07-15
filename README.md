@@ -8,7 +8,10 @@
 
 - [submission PR](https://github.com/PaulDepew/resty)
 
-- [Heroku Deployment]()
+- [Netlify Deployment](https://distracted-roentgen-6951b6.netlify.app/)
+- [GitHub Pages Deployment]()
+- [AWS S3 Deployment](http://resty-app-test.s3-website-us-west-2.amazonaws.com/)
+- [AWS Amplify Deployment](https://master.d30w5wk5pui6fs.amplifyapp.com/)
 
 ### Setup
 
@@ -19,12 +22,18 @@ Install Dependencies
    - "react": "^16.13.1",
    - "react-dom": "^16.13.1",
    - "react-scripts": "^3.4.1"
+   - "enzyme": "^3.11.0",
+   - "enzyme-adapter-react-16": "^1.15.2",
+   - "gh-pages": "^3.1.0",
+  
 
 Assign Scripts:
   - "start": "react-scripts start",
   - "build": "react-scripts build",
   - "test": "react-scripts test --env=jsdom",
   - "eject": "react-scripts eject"
+  - "deploy": "gh-pages -d build",
+  - "predeploy": "npm run build"
 
 Run npm start
 
