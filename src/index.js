@@ -4,7 +4,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Import Main App
-import App from './app.js';
+import App from './app.jsx';
 
 
 

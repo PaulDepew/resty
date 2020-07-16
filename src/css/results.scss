@@ -1,0 +1,22 @@
+$darkBlue: #0d1321;
+$offWhite: #F0EBD8;
+$slate: #63768D;
+
+#results {
+    color: $darkBlue;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+  h2{
+    color:$slate;
+    width: fit-content;
+  }
+
+  #header{
+    display: inline;
+  
+  }
+  #counter{
+    display: inline;
+  }
+}
