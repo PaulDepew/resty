@@ -17,7 +17,7 @@ const List = (props) => {
           <code><h2>HEADER:</h2> {header}</code>
         </pre>
         <pre>
-          <code><h2>COUNT:</h2> {props.count}</code>
+          <code id="count"><h2>COUNT:</h2> {props.count}</code>
         </pre>
         <pre>
           <code><h2>RESULTS:</h2> {results}</code>

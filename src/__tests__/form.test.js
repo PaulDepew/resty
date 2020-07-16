@@ -2,7 +2,7 @@ import React from 'react';
 import {shallow, mount } from 'enzyme';
 import renderer from 'react-test-renderer';
 
-import Form from '../components/form.js';
+import Form from '../components/form.jsx';
 
 describe('Testing of our Form', () =>{
   it('Should render the application', ()=> {
