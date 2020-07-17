@@ -5,7 +5,12 @@ import '../css/form.scss';
 const initialState = {
   method: '',
   url: '',
+  archive: [],
 };
+
+localStorage.setItem('archive', JSON.stringify(initialState.archive));
+
+console.log(JSON.parse(localStorage.getItem('archive')));
 
 class Form extends React.Component {
   constructor(props) {
@@ -46,7 +51,7 @@ class Form extends React.Component {
           url: 'THISISAURL',
         }),
         headers:{
-          "Content-type": 'application/json; charset=UTF-8',
+          'Content-type': 'application/json; charset=UTF-8',
         },
       },
       );
@@ -59,7 +64,7 @@ class Form extends React.Component {
           url: 'THISISAURL',
         }),
         headers:{
-          "Content-type": 'application/json; charset=UTF-8',
+          'Content-type': 'application/json; charset=UTF-8',
         },
       },
       );
@@ -77,14 +82,28 @@ class Form extends React.Component {
     let jsonData = await data.json();
     
     let header = data.headers;
-    console.log(header);
 
     let count = jsonData.count;
 
     let pokemon = jsonData.results;
 
+    let archiveElement = {
+      method: this.state.method,
+      url: this.state.url, 
+      response: {
+        header,
+        count,
+        data: pokemon,
+      }, 
+      time: new Date().toDateString(),
+    };
 
     this.props.handler(count, pokemon, header);
+
+    let archive = await JSON.parse(localStorage.getItem('archive'));
+    archive.push(archiveElement);
+    localStorage.setItem('archive', JSON.stringify(archive));
+      
   }
 
   render() {
